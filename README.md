@@ -121,5 +121,5 @@ Abrir `notebooks/eda.ipynb` en Jupyter Notebook o JupyterLab.
 
 **Pablo Foix** — Data Analyst Jr
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/pablofoix)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/pablo-foix)
 [![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=github)](https://github.com/pablofoix)
