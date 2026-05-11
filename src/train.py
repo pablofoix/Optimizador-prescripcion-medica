@@ -33,17 +33,7 @@ def cargar_datos(ruta: str) -> pd.DataFrame:
     df["BP"]         = df["BP"].map({"LOW": 1, "NORMAL": 2, "HIGH": 3})
     df["Drug"]       = df["Drug"].map({"drugA": 1, "drugB": 2, "drugC": 3, "DrugY": 4, "drugX": 5})
 
-    df["Na_to_K"] = _filtro_hampel(df["Na_to_K"].tolist())
-
     return df
-
-
-def _filtro_hampel(data: list, umbral: int = 3) -> list:
-    """Reemplaza outliers por la mediana usando el filtro de Hampel."""
-    mediana = np.median(data)
-    mad = np.median([np.abs(x - mediana) for x in data])
-    limite = umbral * mad
-    return [x if np.abs(x - mediana) <= limite else mediana for x in data]
 
 
 # =============================================================================
@@ -175,7 +165,7 @@ def evaluar_modelo(modelo, X_train_scaled, X_test_scaled, y_train, y_test):
 # =============================================================================
 
 if __name__ == "__main__":
-    df = cargar_datos("data/drugs_classif.csv")
+    df = cargar_datos("data/clean_drugs_classif.csv")
 
     X_train_scaled, X_test_scaled, y_train, y_test = preparar_datos(df)
 

@@ -18,6 +18,7 @@ Se entrenó un **MLPClassifier** (red neuronal multicapa) con búsqueda de hiper
 Optimizador-Prescripcion-Medica/
 ├── data/
 │   └── drugs_classif.csv         # Dataset de pacientes
+    └── clean_drugs_classif.csv         # Dataset limpio
 ├── notebooks/
 │   └── eda.ipynb          # Análisis exploratorio de datos
 ├── src/
